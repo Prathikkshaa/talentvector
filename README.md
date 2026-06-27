@@ -2,7 +2,8 @@
 
 **Semantic resume ranking for recruiters** — paste or upload one job description and up to 10 resumes; get a ranked, explained shortlist with matched skills, missing skills, and a clear next-action recommendation in seconds.
 
-**Live demo:** [talentvector.streamlit.app](https://talentvector.streamlit.app) *(link updated after deploy)*
+**Live demo:** [talentvector.streamlit.app](https://talentvector.streamlit.app) *(deploying — link active shortly)*  
+**Repo:** [github.com/Prathikkshaa/talentvector](https://github.com/Prathikkshaa/talentvector)
 
 ---
 
@@ -47,7 +48,7 @@ Resumes ──────────┘        │
 ## Run locally
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/talentvector
+git clone https://github.com/Prathikkshaa/talentvector
 cd talentvector
 python -m venv .venv
 .venv\Scripts\activate      # Windows
