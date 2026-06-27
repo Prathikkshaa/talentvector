@@ -79,6 +79,35 @@ def match(jd_text: str, resume_text: str) -> dict:
     skill_coverage = len(matched_skills) / len(jd_skills) if jd_skills else 0.0
     overall = DOC_WEIGHT * doc_sim + SKILL_WEIGHT * skill_coverage
 
+    doc_contribution = DOC_WEIGHT * doc_sim
+    skill_contribution = SKILL_WEIGHT * skill_coverage
+
+    # Explain what's driving or limiting the score
+    if not jd_skills:
+        driver = "No skills detected in JD — score reflects content alignment only."
+    elif skill_coverage < 0.20 and doc_sim > 0.70:
+        top_missing = sorted(missing_skills)[:3]
+        driver = (
+            f"Content alignment is strong but skill coverage is low — "
+            f"{len(missing_skills)} of {len(jd_skills)} required skills absent. "
+            f"Key gaps: {', '.join(top_missing)}."
+        )
+    elif skill_coverage < 0.20:
+        top_missing = sorted(missing_skills)[:3]
+        driver = (
+            f"Score limited by both content alignment and skill coverage. "
+            f"{len(missing_skills)} of {len(jd_skills)} required skills absent. "
+            f"Key gaps: {', '.join(top_missing)}."
+        )
+    elif len(missing_skills) > 0:
+        top_missing = sorted(missing_skills)[:3]
+        driver = (
+            f"Good fit overall. {len(matched_skills)} of {len(jd_skills)} skills matched. "
+            f"Remaining gaps to probe: {', '.join(top_missing)}."
+        )
+    else:
+        driver = f"All {len(jd_skills)} detected JD skills present in resume. Strong contextual and skill alignment."
+
     return {
         "score": round(overall, 4),
         "doc_similarity": round(doc_sim, 4),
@@ -88,6 +117,13 @@ def match(jd_text: str, resume_text: str) -> dict:
         "extra_skills": sorted(extra_skills),
         "jd_skill_count": len(jd_skills),
         "next_action": next_action(overall),
+        "score_breakdown": {
+            "doc_pct": round(doc_sim * 100, 1),
+            "skill_pct": round(skill_coverage * 100, 1),
+            "doc_pts": round(doc_contribution * 100, 1),
+            "skill_pts": round(skill_contribution * 100, 1),
+        },
+        "score_driver": driver,
     }
 
 
