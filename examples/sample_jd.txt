@@ -1,0 +1,29 @@
+Senior Data Analyst — Growth & Retention
+
+About the Role
+We are looking for a Senior Data Analyst to join our Growth & Retention team. You will work closely with product managers, engineers, and marketing to drive data-informed decisions that improve user retention and accelerate revenue growth.
+
+Responsibilities
+- Design and maintain dashboards and reports that track key business metrics including churn, retention, and lifetime value
+- Conduct deep-dive analyses to identify drivers of user churn and recommend actionable interventions
+- Build predictive models to forecast retention rates and identify at-risk users
+- Design and analyze A/B tests to evaluate product changes and marketing campaigns
+- Partner with the data engineering team to ensure clean, reliable data pipelines
+- Present findings to senior leadership with clear, compelling data storytelling
+- Define and track KPIs for Growth and Retention initiatives
+
+Required Skills & Qualifications
+- 4+ years of experience in data analysis or analytics engineering
+- Advanced SQL skills — comfortable with complex joins, window functions, CTEs
+- Proficiency in Python for data manipulation (pandas, NumPy) and modeling (scikit-learn, XGBoost)
+- Experience with data visualization tools (Tableau, Power BI, or Looker)
+- Hands-on experience with A/B testing, statistical hypothesis testing, and experiment design
+- Familiarity with machine learning concepts — classification, regression, churn prediction
+- Experience with cloud data platforms (Snowflake, BigQuery, or Redshift)
+- Strong communication skills and ability to translate technical findings for non-technical stakeholders
+
+Nice to Have
+- Experience with Spark or distributed data processing
+- Familiarity with dbt for data transformation
+- Knowledge of customer segmentation and cohort analysis techniques
+- Experience in a SaaS or subscription business context

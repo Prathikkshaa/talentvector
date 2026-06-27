@@ -1,0 +1,21 @@
+Jordan Patel — Data Analyst
+
+EXPERIENCE
+
+Business Analyst — Deloitte Consulting (2020–Present)
+- Analyzed client sales data using Excel and SQL to identify revenue growth opportunities
+- Created Power BI dashboards for C-suite stakeholders tracking operational KPIs
+- Supported hypothesis-driven problem solving and structured slide presentations for senior management
+- Worked with marketing teams on campaign performance tracking and ROI analysis
+- Conducted market research and competitive benchmarking for three strategic engagements
+
+Junior Data Analyst — HealthFirst (2018–2020)
+- Queried relational databases using SQL to extract patient outcome data for reporting
+- Built Excel models to forecast staffing requirements and budget allocation
+- Produced monthly reports summarizing key metrics for department heads
+
+SKILLS
+SQL (intermediate), Power BI, Excel (advanced), PowerPoint, Tableau (basic), Python (beginner — pandas), data visualization, business analysis, stakeholder communication, market research
+
+EDUCATION
+B.S. Information Systems, University of Michigan, 2018

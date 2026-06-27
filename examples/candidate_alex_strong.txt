@@ -1,0 +1,22 @@
+Alex Chen — Senior Data Analyst
+
+EXPERIENCE
+
+Data Analyst, Growth Team — Stripe (2021–Present)
+- Built and maintained Tableau dashboards tracking user retention, churn rate, and monthly recurring revenue for executive reporting
+- Developed a churn prediction model using XGBoost and scikit-learn achieving strong separation between churned and retained users; model deployed via internal ML platform
+- Designed and analyzed 30+ A/B experiments measuring impact of onboarding changes on 30-day retention; presented findings to VP of Product
+- Wrote complex SQL queries in BigQuery (CTEs, window functions, lateral joins) to build cohort analysis and customer lifetime value models
+- Partnered with data engineering to build dbt models that standardized retention metrics across business units
+- Built customer segmentation models using k-means clustering to identify high-value user personas
+
+Data Analyst — Twilio (2019–2021)
+- Performed statistical hypothesis testing to evaluate marketing campaign effectiveness
+- Automated weekly KPI reports using Python (pandas, matplotlib) reducing manual reporting time significantly
+- Designed funnel analysis to identify where users dropped off during activation; drove a 12% improvement in activation rate
+
+SKILLS
+Python (pandas, NumPy, scikit-learn, XGBoost, matplotlib), SQL (advanced), Tableau, Looker, BigQuery, Snowflake, dbt, A/B testing, statistical analysis, churn prediction, cohort analysis, machine learning, customer segmentation, data storytelling, executive presentation
+
+EDUCATION
+B.S. Computer Science, UC Berkeley, 2019
